@@ -18,18 +18,19 @@
   min-block-size: 100dvb;
   background-image: var(--background-gradient);
   font-family: var(--font-family-hbf), monospace;
-  font-variation-settings: "wdth" var(--font-weight-s), "wdth" var(--font-weight-l);
+  font-variation-settings: "wgth" var(--font-weight-s),
+    "wgth" var(--font-weight-l);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-@supports (font-variation-settings: normal){
-  .page{
-    font-family: var(--font-family-hbf), monospace;
+@supports (font-variation-settings: normal) {
+  .page {
+    font-family: var(--font-family-hbf), sans-serif;
   }
-} 
- /* ПОЧ НЕ РАБОТАЕТ */
+}
+/* ПОЧ НЕ РАБОТАЕТ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 .header {
   display: flex;
@@ -40,31 +41,101 @@
   background-color: var(--bg-page);
   gap: 20px;
   width: 100%;
-  height: 327px;
+  max-width: 700px;
   margin-block: 100px;
+  height: 368px;
+  padding-block: 100px;
+  align-items: center;
 }
 
 .header_title {
   font-family: var(--font-weight-l) monospace;
   text-transform: var(--text-transform);
   color: var(--color-m);
-  font-variation-settings: "wdth" var(--font-weight-l);
+  font-size: var(--font-weight-l);
 }
 
 .header_text {
+  font-family: var(--font-weight-l) monospace;
   font-size: var(--font-size-header-text);
 }
 
-.main{
- background-color: var(--bg-page); 
-}
-
-.cards{
+.main {
   display: flex;
   flex-direction: column;
-gap: 50px;
+  align-items: center;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  /* width: !!!!!!!!!!!!!!!!!!!!!!!!! */
 }
 .articles {
- background-color: var(--bg-page);
- border: 2px solid var(--border-color);
+  width: 100%;
+  max-width: 700px;
+  background-color: var(--bg-page);
+  border: 2px solid var(--border-color);
+}
+
+.article_title {
+  color: var(--color-m);
+  font-size: var(--font-size-simple-text);
+  font-family: var(--font-family-text), sans-serif;
+  padding: 4px 10px;
+  font-variation-settings: "wgth" var(--font-weight-l);
+}
+
+.article_content {
+  flex-direction: column;
+}
+
+.article_image {
+  /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+}
+
+.article_content_text {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 25px;
+  font-variation-settings: "wgth" var(--font-weight-s);
+  font-family: var(--font-family-text);
+  font-size: var(--font-size-simple-text);
+  line-height: 21px;
+}
+
+.button {
+  position: relative;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  background: none;
+  border: 2px solid var(--border-color);
+  padding: 12.5px;
+  background-color: var(--bg-page);
+}
+.card__like-button {
+  display: flex;
+  gap: 5px;
+  justify-items: center;
+  justify-self: end;
+  padding: 25px;
+}
+
+.button__text {
+  font-family: var(--font-weight-l) monospace;
+  font-size: var(--font-size-header-text);
+}
+
+.card__icon-button {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  cursor: pointer;
+  height: 35px;
+  transition: border 0.3s ease;
+  background: transparent;
+  border: none;
 }

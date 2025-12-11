@@ -75,8 +75,8 @@ text
   opacity: 0.5;
   text-transform: uppercase;
   mix-blend-mode: hard-light;
-  text-shadow: 0 1px var(--color-span), 1px 2px var(--color-span),
-    2px 1px var(--color-span), 1px 0px var(--color-span);
+  text-shadow: -1px 0px var(--color-span), 0px 1px var(--color-span),
+    1px 0px var(--color-span), 0px -1px var(--color-span);
   top: 25px;
   right: 25px;
 }
@@ -100,7 +100,7 @@ text
 .cards {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 54px;
 }
 
 .articles {
@@ -120,7 +120,7 @@ text
 .article_content {
   display: flex;
   flex-direction: column;
-  gap:0;
+  gap: 0;
   margin-block-end: 25px;
 }
 
@@ -180,7 +180,6 @@ text
   filter: sepia(1) contrast(2) brightness(150%);
 }
 
-/* не пон!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 .like-icon {
   width: 39px;
@@ -290,10 +289,9 @@ text
   outline: 2px solid var(--color-m);
 }
 
-
 .button {
   font-family: var(--font-family-hbf), fantasy;
-  font-variation-settings: 'wght' var(--font-weight-simple); 
+  font-variation-settings: "wght" var(--font-weight-simple);
   font-size: var(--font-size-html-card);
   position: relative;
   display: flex;
@@ -348,26 +346,19 @@ text
   box-shadow: 2px 2px 0 var(--color-m);
 }
 
-
-
-
 .card__icon-button:has(.is-liked) + .card__like-button {
   padding: 10px 20px;
 }
 
 
 
-
-/* конец не пон + ДОДЕЛАТЬ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-
 /* ПОДВАЛ */
 
 .disketa {
-  display: grid;
+  display: flex;
   grid-template-columns: minmax(320px, 700px);
   color: var(--color-m);
   background-color: var(--background-gradient);
-  /* border: 2px solid var(--border-color); */
   justify-content: center;
   padding-block-start: 49px;
   margin-block-end: 100px;
@@ -378,11 +369,11 @@ text
   justify-content: center;
   align-items: center;
   gap: 10px;
-  padding: 15px 11px;
+  padding: 17px 16px;
+  width: fit-content;
 }
 
 .disk_icon {
-  /* display: block; */
   width: 21px;
   height: 21px;
   mix-blend-mode: difference;
@@ -447,7 +438,7 @@ text
   }
 
   .cards {
-    gap: 52px;
+    gap: 56px;
   }
 
   .disk_icon {
@@ -458,6 +449,6 @@ text
   .button_disk {
     display: flex;
     flex-direction: column;
-    padding: 15px 16.5px;
+    padding: 18px 16.5px;
   }
 }

@@ -6,9 +6,9 @@
   --font-weight-s: 410;
   --font-weight-l: 715;
   --font-weight-simple: 400;
-  --color-m: rgba(0, 0, 0, 1);
+  --color-m: black;
   --bg-page: #ffffff;
-  --border-color: #000000;
+  --border-color: rgba(0, 0, 0, 1);
   --button-like-hover: white;
   --color-span: rgba(255,255,255);
   --button-press: rgba(255, 0, 0, 1);

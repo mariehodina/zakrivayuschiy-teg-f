@@ -1,16 +1,16 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-  --font-family-hbf: "PressStart2P";
+  --font-accent: "PressStart2P";
   --font-family-text: "Inter-Variable";
   --heart-color: transparent;
   --font-weight-s: 410;
   --font-weight-l: 715;
   --font-weight-simple: 400;
-  --color-m: black;
+  --color-main: black;
   --bg-page: #ffffff;
   --border-color: rgba(0, 0, 0, 1);
   --button-like-hover: white;
-  --color-span: rgba(255,255,255);
+  --color-label: rgba(255,255,255);
   --button-press: rgba(255, 0, 0, 1);
   --icon-fill: rgba(255, 255, 255);
   --font-size-simple-text: 18px;

@@ -47,14 +47,12 @@ text
   font-variation-settings: "wght" var(--font-weight-simple);
   color: var(--color-main);
   text-transform: var(--text-transform);
-  border: 2px solid var(--color-main);
 }
 
-.content_part{
-display: grid;
+.content_part {
+  display: grid;
   grid-template-columns: minmax(320px, 700px);
 }
-
 
 .header_title {
   font-size: var(--font-size-header);
@@ -68,7 +66,7 @@ display: grid;
 .header_text {
   font-family: var(--font-accent) monospace;
   font-size: var(--font-size-header-text);
-   display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -106,10 +104,8 @@ display: grid;
   }
 }
 
-
-
 .cards {
-   display: grid;
+  display: grid;
   grid-template-columns: minmax(320px, 700px);
   gap: 54px;
 }
@@ -191,7 +187,6 @@ display: grid;
   filter: sepia(1) contrast(2) brightness(150%);
 }
 
-
 .like-icon {
   width: 39px;
   height: 36px;
@@ -236,7 +231,6 @@ display: grid;
   fill: var(--button-press);
   opacity: 0;
 }
-
 
 .like-icon:hover .core {
   fill: var(--color-main);
@@ -358,8 +352,6 @@ display: grid;
   padding: 10px 20px;
 }
 
-
-
 /* ПОДВАЛ */
 
 .disketa {
@@ -378,8 +370,8 @@ display: grid;
   align-items: center;
   gap: 10px;
   padding: 17px 16px;
-   background-color: var(--bg-page);
-  border: 2px solid var( --color-main);
+  background-color: var(--bg-page);
+  border: 2px solid var(--color-main);
 }
 
 .disk_icon {
@@ -391,7 +383,7 @@ display: grid;
 .dialog_disk {
   background-color: var(--bg-page);
   border: 2px solid var(--color-main);
-   grid-template-columns: minmax(320px, 700px);
+  grid-template-columns: minmax(320px, 700px);
   padding: 30px;
 }
 
@@ -432,7 +424,7 @@ display: grid;
 }
 
 .disketa_dialog {
- width: 293px;
+  width: 293px;
   height: 38px;
   text-transform: uppercase;
   display: block;
@@ -448,16 +440,18 @@ display: grid;
     margin-block-start: 95px;
   }
 
-  .main{ 
+  .main {
     padding-block-start: 5px;
   }
+
   .cards {
     gap: 56px;
   }
 
-  .disketa{
+  .disketa {
     padding-block-start: 53px;
   }
+
   .disk_icon {
     width: 28px;
     height: 28px;
